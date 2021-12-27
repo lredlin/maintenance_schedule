@@ -8,29 +8,50 @@ public class MaintenanceItem {
     DAILY, WEEKLY, BIWEEKLY, MONTHLY, ANNUAL, SPECIAL
 }
 
+    public static void main(String[] args) {
+    	System.out.println("Hi!");
+    }
+    
+    
     // index is the next free number for the given periodicity
     public MaintenanceItem(Periodicity periodicity, int index){
-        this.periodicity = periodicity;
+        this.setPeriodicity(periodicity);
         switch (periodicity){
             case DAILY:
-                this.code = "d-"+index;
+                this.setCode("d-"+index);
             break;
             case WEEKLY:
-                this.code = "w-"+index;
+                this.setCode("w-"+index);
             break;
             case BIWEEKLY:
-                this.code = "b-"+index;
+                this.setCode("b-"+index);
             break;
             case MONTHLY:
-                this.code = "m-"+index;
+                this.setCode("m-"+index);
             break;
             case ANNUAL:
-                this.code = "a-"+index;
+                this.setCode("a-"+index);
             break;
             case SPECIAL:
-                this.code = "s-"+index;
+                this.setCode("s-"+index);
             break;
         }
     }
+
+	public Periodicity getPeriodicity() {
+		return periodicity;
+	}
+
+	public void setPeriodicity(Periodicity periodicity) {
+		this.periodicity = periodicity;
+	}
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
     
 }
