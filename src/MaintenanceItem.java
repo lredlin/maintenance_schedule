@@ -10,6 +10,10 @@ public class MaintenanceItem {
 
     public static void main(String[] args) {
     	System.out.println("Hi!");
+    	
+    	for (Periodicity periodicity : Periodicity.values()) {
+    		System.out.println(periodicity);
+    	}
     }
     
     
