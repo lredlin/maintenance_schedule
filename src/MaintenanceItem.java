@@ -7,9 +7,17 @@ public class MaintenanceItem {
     public enum Periodicity {
     DAILY, WEEKLY, BIWEEKLY, MONTHLY, ANNUAL, SPECIAL
 }
-
+    /**
+     * Main Method
+     */
     public static void main(String[] args) {
     	System.out.println("Hi!");
+    	/**
+    	 * For Loop: Prints out available periodicities to Console.
+    	 */
+    	for (Periodicity periodicity : Periodicity.values()) {
+    		System.out.println(periodicity);
+    	}
     }
     
     
