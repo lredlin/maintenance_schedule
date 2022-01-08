@@ -1,2 +1,7 @@
-/MaintenanceItem$Periodicity.class
-/MaintenanceItem.class
+/Item.class
+/Worker.class
+/Owner.class
+/ItemNotPresentExemption.class
+/ItemNotFoundExemption.class
+/MaintenanceItemLockedOutException.class
+/MaintenanceItemNotFoundException.class
