@@ -4,6 +4,7 @@ public class Owner {
 	String userName;
 	int work_ID;
 	int privilege_Level;
+	
 	public Owner(String userName, int work_ID, int privilege_Level) {
 		super();
 		this.userName = userName;

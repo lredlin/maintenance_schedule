@@ -12,7 +12,6 @@ public class Schedule<T extends Item> {
 	 * Clear Month
 	 * Reschedule Item throws itemnotpresentexemption
 	 * 
-	 * 
 	 */	
 	
 	public void markCalComplete(T t) {
@@ -35,7 +34,7 @@ public class Schedule<T extends Item> {
 		
 	}
 	
-	public void rescheduleItem() {
+	public void rescheduleItem() throws MaintenanceItemNotFoundException {
 		
 	}
 	

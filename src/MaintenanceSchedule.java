@@ -24,7 +24,7 @@ public class MaintenanceSchedule {
 	 */
 	public void setMaintenanceItemToCalendar(MaintenanceItem.Periodicity periodicity, int index, Date issueDate, Date completedDate, Date dueDate, Owner owner, int specialPeriodicity){
 		MaintenanceItem mItem = new MaintenanceItem(periodicity, index, issueDate, completedDate, dueDate, owner, specialPeriodicity);
-	}
+	} 	
 	
 	public void emptyCalendar() {
 		
