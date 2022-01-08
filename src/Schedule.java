@@ -1,41 +1,24 @@
+import java.util.Date;
 
-public class Schedule<T extends Item> {
-	
+public abstract class Schedule<T extends Item> {
+
 	public MaintCalendar<T> maintCalendar;
-	
-	//TODO
+
+	// TODO
 	/*
-	 * Calendar can be marked complete
-	 * Calendar can be emptied
-	 * Clear day
-	 * Clear week
-	 * Clear Month
-	 * Reschedule Item throws itemnotpresentexemption
+	 * Calendar can be marked complete Calendar can be emptied Clear day Schedule
+	 * Item Reschedule Item throws MaintenanceItemNotFoundException
 	 * 
-	 */	
-	
-	public void markCalComplete(T t) {
-		
-	}
-	
-	public void emptyCalendar() {
-		
-	}
-	
-	public void clearDay() {
-		
-	}
-	
-	public void clearWeek() {
-		
-	}
-	
-	public void clearMonth() {
-		
-	}
-	
-	public void rescheduleItem() throws MaintenanceItemNotFoundException {
-		
-	}
-	
+	 */
+
+	public abstract int markComplete(MaintenanceItem.Periodicity periodicity, int index) throws MaintenanceItemNotFoundException;
+
+	public abstract void emptyCalendar();
+
+	public abstract void clearDay(int Day);
+
+	public abstract void scheduleItem(T newItem, Date issueDate, Worker worker);
+
+	public abstract void rescheduleItem(MaintenanceItem.Periodicity periodicity, int index, Date issueDate, Worker worker) throws MaintenanceItemNotFoundException;
+
 }
